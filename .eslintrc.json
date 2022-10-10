@@ -4,7 +4,7 @@
         "es2021": true
     },
     "extends": 
-    ["airbnb-base",
+    ["eslin:recommended",
     "prettier"
     ],
     "parserOptions": {
@@ -12,5 +12,7 @@
         "sourceType": "module"
     },
     "rules": {
+        /*"no-console":"off",
+        "import/prefer-default-export": "off"*/
     }
 }
