@@ -1,4 +1,4 @@
-/*const foo = 5;
+const foo = 5;
 const moreFoo=5;
 const bar = "5";
 
@@ -6,7 +6,7 @@ const bar = "5";
 console.log(foo==bar)
 console.log(Object.is(foo,moreFoo))
 console.log(foo===bar);
-console.log(Object.is(foo,bar));*/
+console.log(Object.is(foo,bar));
 
 let a ={};
 let b ={};
