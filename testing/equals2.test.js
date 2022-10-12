@@ -9,7 +9,7 @@ describe('GIVEN striEquals', () => {
         { a: 1, b: '1', r: false },
         { a: true, b: false, r: false },
         { a: false, b: false, r: true },
-        { a: 'water', b: 'oil', r: true },
+        { a: 'water', b: 'oil', r: false },
     ];
 
     cases.forEach((testCase) => {
