@@ -9,8 +9,6 @@
     "test": "jest --watchAll"
   },
   "keywords": [
-    "HTML",
-    "CSS"
   ],
   "author": "Cristian Tonato",
   "license": "ISC",
