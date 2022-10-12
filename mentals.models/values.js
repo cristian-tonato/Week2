@@ -27,3 +27,11 @@ console.log("pepe",isNaN('pepe'));
 
 console.log(Number.isNaN("pepe"))
 console.log(Number.isNaN(0/0));
+
+
+const t=2
+const big=2n
+console.log(t + Number(big));
+console.log(BigInt(t) +(big));
+console.log(2 +"2")
+console.log(2+Number("2"))
