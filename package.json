@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll --coverage"
   },
   "keywords": [],
   "author": "Cristian Tonato",
