@@ -16,12 +16,6 @@ describe("testing add", ()=>{
         expect(add(a,b)).toBeLessThan(5);
     });
 
-    test(`if a = 0, return should be "Error"`, ()=>{
-        let a = 0;
-        let b = 2;
-        expect(add(a,b)).toThrowError(`Error`);
-    })
-
 });
 
 describe ("testing subtraction", () =>{
@@ -53,9 +47,20 @@ describe('Testing divided', () => {
         try {
             divided(a,b)
         } catch (e){
-            expect(e.message).toBe("Error:parametro no valido")
+            expect(e.message).toBe("Error: parámetro no válido")
+        }
+        //expect(add(a, b)).toBe(`Error`);
+    });
+    test(`if a = "pepe", return should be "Error"`, () => {
+        let a = "pepe";
+        let b = 5;
+        try {
+            divided(a, b);
+        } catch (e) {
+            expect(e.message).toBe("Error: parámetro no válido");
         }
         //expect(add(a, b)).toBe(`Error`);
     });
 });
+
 
