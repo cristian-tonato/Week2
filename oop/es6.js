@@ -1,6 +1,7 @@
 // ES6+ 2es2015 ---es2022
 //clases envueltas 
-class Person{
+import { Student } from "./student.js";
+export class Person{
     static isPerson (value){
     return value instanceof Object
 }
