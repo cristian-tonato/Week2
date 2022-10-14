@@ -9,8 +9,8 @@ class Person{
          this.name=name;
         this.age= age;
     }
-    greetings (target="bro"){
-        console.log(`Hola ${target}, soy ${this.name} y tengo ${this.age} años`);  
+    greetings (target ={name:"bro"}) {
+        console.log(`Hola ${target.name}, soy ${this.name} y tengo ${this.age} años`);  
     };
 };
 
@@ -48,3 +48,20 @@ Person.prototype.greetings = function(target="bro"){
 Person.isPerson =function(value){
     return value instanceof Person
 }*/
+class Student extends Person{
+    constructor (name, age, course){
+        super(name, age)
+        this.course = course;
+    }
+    greetings( target={name:"bro"}){
+        super.greetings(target)
+        console.log(`Estudio ${this.course}`)
+    }
+    
+}
+
+const s1= new Student("pepito",12, "Angular")
+
+console.log(s1);
+s1.greetings(p1.name);//cambio en function de greetins/
+s1.greetings(p2)
